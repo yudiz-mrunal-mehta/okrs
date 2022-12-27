@@ -97,6 +97,8 @@
   font-size: 1.5rem;
 }
 
+
+
 .card p {
   margin: 0;
   font-size: 1.25rem;
@@ -108,6 +110,88 @@
   margin-left: 0.5rem;
 }
 
+.logo-navbar {
+  background-color: #045de9;
+  /* border-radius: 30px; */
+  height: 58px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  background-color: #ffffff;
+  /* border-radius: 30px; */
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.navbar li {
+  /* float: left; */
+  list-style: none;
+  /* margin: 9px 13px */
+}
+
+.navbar ul {
+  display: flex;
+  margin-bottom: 0px;
+  margin: auto;
+  /* flex-direction: row; */
+  overflow: auto;
+  /* margin: 0px; */
+  /* padding: 0px; */
+  /* justify-content: space-between; */
+}
+
+.navbar li a {
+  margin-right: 16px;
+  padding: 5px 8px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  display: block;
+  color: #0e3778;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+.navbar li a:hover {
+  color: #045de9;
+  cursor: pointer;
+}
+
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
+  .navbar {
+    display: flex;
+    white-space: nowrap;
+  }
+
+  .navbar ul {
+    padding: 8px 0 9px;
+    margin: auto;
+    overflow: auto;
+    overflow-y: hidden;
+  }
+
+  .navbar li {
+    /* float: left; */
+    list-style: none;
+    /* margin: 9px 13px */
+  }
+
+  .navbar li a {
+    padding: 4px 8px;
+    margin-right: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    display: block;
+    color: #0e3778;
+    border-radius: 8px;
+    text-transform: uppercase;
+  }
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
@@ -116,13 +200,16 @@
 }
 
 @media (prefers-color-scheme: dark) {
+
   .card,
   .footer {
     border-color: #222;
   }
+
   .code {
     background: #111;
   }
+
   .logo img {
     filter: invert(1);
   }
